@@ -4,19 +4,23 @@ import 'rxjs/add/operator/map';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+
 import { CardComponent } from './card/card.component';
 import { NavmenuComponent } from './navmenu/navmenu.component';
+import { BuscaPipe } from './busca.pipe';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    NavmenuComponent
+    NavmenuComponent,
+    BuscaPipe, 
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

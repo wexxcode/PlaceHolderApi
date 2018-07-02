@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,  
   ],
-  declarations: []
+  declarations: [],
+  exports: []
 })
 export class CardModule { }
