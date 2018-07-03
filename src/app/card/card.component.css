@@ -1,25 +1,46 @@
-
-.card {
-    position: relative;
-    overflow: hidden;
-}
-
-.card-img-top {
-    position: relative;
-    left:-40%;
-    top: 50%;
-    max-height: 10%;
-    width: 150%; 
-}
-
 .navbar {
+    background-color: #ffffff!important;
     border-bottom: 1px solid #d6d5d4;
     box-shadow: 1px 1px #e7e6e5;
 }
 
+.logo {
+    padding-top: 28px;
+}
+
+
+i.fa.fa-search {
+    color: #acaaaa;
+    font-size: 17px;
+    position: relative;
+    float: right;
+    margin-top: -28px;
+    margin-right: 15px;
+}
+div.sanduich {
+    border: 1px solid #e7e7e7;
+    padding: 3px 8px 3px 8px;
+    border-radius: 2px;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f5f5f5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#f5f5f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+div.sanduich div{
+    width: 26px;
+    height: 3px;
+    background-color:#bbbbbb;
+    margin: 4px 0;
+}
+
 .box-search {
     width: 43%;
+   
     
+}
+.form-control {
+    background-color: #f7f6f6;
+    border: 1px solid #e7e7e7;
 }
 
 .img-fluid {
@@ -28,12 +49,43 @@
   width: 40px;
 }
 
-.logo {
-    padding-top: 28px;
-}
-
 a.nav-link.user-link span {
     color: #8c8c8c;
+}
+
+
+@media (min-width: 576px) { 
+    .card-columns {  
+        column-count: 1;  
+    }
+ }
+@media (min-width: 768px) { 
+    .card-columns {
+        column-count: 3;
+    }
+}
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4; 
+    }
+}
+
+.card-columns {
+    margin-top: 5%;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card-img-top {
+    position: relative;
+    left:-40%;
+    top: 50%;
+    max-height: 10%;
+    width: 150%; 
 }
 
 .card a, .card a:hover {
@@ -45,7 +97,7 @@ a.nav-link.user-link span {
 .card h4 {
     font-family: 'Open Sans', sans-serif;
     color: #717171;
-    font-size: 24px;
+    font-size: 22px;
     height: 30px; 
     overflow: hidden;
     text-overflow: clip; 
@@ -55,13 +107,16 @@ a.nav-link.user-link span {
 .card span.checkin {
     font-family: 'Open Sans', sans-serif;
     color: #acaaaa;
-    font-size: 18px;  
+    font-size: 17px;  
 }
 .card span.checkin:first-letter { text-transform: capitalize; }
 
- i.fas.fa-map-marker-alt {
-    color: #acaaaa;
-    font-size: 18px;
+i.fas.fa-map-marker-alt {
+    color: #b4b4b4;
+    font-size: 14px;
+    margin-bottom: 2px;
+
+ 
 }
 
 .card-text {
@@ -75,6 +130,11 @@ a.nav-link.user-link span {
 }
 .card-text:first-letter { text-transform: capitalize; }
 
+.card-footer {
+    background-color: #ffffff;
+    border-top:1px solid #e9e9e9;
+}
+
 span.star.no-selected {
     font-size: 17px;
     color: #dddddd;
@@ -85,4 +145,22 @@ span.star.selected  {
     font-size: 17px;
     color: #b9cb41!important;
 
+}
+
+div.facebook {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    background-color: #d6d6d6;
+    width: 22px;
+    height: 22px;
+
+}
+
+i.fa.fa-facebook {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: -2px;
+  
 }

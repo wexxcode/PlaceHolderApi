@@ -23,11 +23,15 @@ export class CardComponent implements OnInit {
   paginationLimit:Number; 
 
   @Input()textoProcurado: String = '';
+  @Input()dado: String;
+  @Input()title: String;
+
+   
   
   constructor(http: Http) {
     this.meuArrayFinal;
     this.startPage = 0;
-    this.paginationLimit = 6;
+    this.paginationLimit = 8;
 
      
     http.get(this.minhaUrl)
@@ -57,7 +61,7 @@ export class CardComponent implements OnInit {
 
     showMoreItems()
   {
-     this.paginationLimit = Number(this.paginationLimit) + 3;        
+     this.paginationLimit = Number(this.paginationLimit) + 4;        
   }
-  
+
   }
