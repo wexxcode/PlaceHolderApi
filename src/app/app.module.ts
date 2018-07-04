@@ -9,6 +9,7 @@ import { CardModule } from './card/card.module';
 
 
 import { NavmenuComponent } from './navmenu/navmenu.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -25,7 +26,8 @@ import { NavmenuComponent } from './navmenu/navmenu.component';
   imports: [
     BrowserModule,
     HttpModule,
-    CardModule
+    CardModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

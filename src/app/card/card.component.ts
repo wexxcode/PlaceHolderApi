@@ -5,6 +5,8 @@ import {Http } from '@angular/http';
 
 
 
+
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -23,8 +25,8 @@ export class CardComponent implements OnInit {
   paginationLimit:Number; 
 
   @Input()textoProcurado: String = '';
-  @Input()dado: String;
-  @Input()title: String;
+    dado: any;
+ 
 
    
   
@@ -63,5 +65,7 @@ export class CardComponent implements OnInit {
   {
      this.paginationLimit = Number(this.paginationLimit) + 4;        
   }
+
+  
 
   }

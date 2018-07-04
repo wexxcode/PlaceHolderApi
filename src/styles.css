@@ -2,3 +2,10 @@
 body {
     background-color: #f0efee;
 }
+
+
+@media (max-width: 576px) { 
+    body {
+        background-color: #ffffff;
+    }
+}
